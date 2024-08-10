@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 const xDisp = document.getElementById('x');
 const yDisp = document.getElementById('y');
 let image = new Image();
-image.src = '/assets/pmap.png';
+image.src = 'assets/pmap.png';
 
 let isDragging = false;
 let offsetX, offsetY;
@@ -127,7 +127,7 @@ function menu() {
     nMenu.id = "menu";
     nMenu.classList.add("panel");
     nMenu.style.opacity = 0;
-    nMenu.innerHTML = `<h3>Menu</h3><img src="/assets/icons/hbb.svg" alt="Close" onclick="menu()" class="m-icon">`;
+    nMenu.innerHTML = `<h3>Menu</h3><img src="assets/icons/hbb.svg" alt="Close" onclick="menu()" class="m-icon">`;
     document.body.appendChild(nMenu);
     setTimeout(() => {
       nMenu.style.opacity = 1;
