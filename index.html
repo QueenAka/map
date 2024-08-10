@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Map</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="icons top left">
+    <img src="/assets/icons/reset.svg" alt="Reset" onclick="zoomReset()">
+  </div>
+  <div class="icons top right">
+    <img src="/assets/icons/hbb.svg" alt="Menu" onclick="menu()" />
+  </div>
+  <canvas id="map"></canvas>
+  <div class="icons bottom left">
+    <h3>X: <span id="x">0</span>, Y: <span id="y">0</span></h3>
+  </div>
+  <div class="icons bottom right">
+    <img src="/assets/icons/zoomIn.svg" alt="Zoom In" onclick="zoomIn()">
+    <img src="/assets/icons/zoomOut.svg" alt="Zoom Out" onclick="zoomOut()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

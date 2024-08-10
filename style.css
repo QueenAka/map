@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  user-select: none;
+  transition: all 0.1s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+canvas {
+  background: black;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  padding: 5px;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  height: 30px;
+}
+
+.icons.bottom.right {
+  bottom: 5px;
+  right: 5px;
+}
+
+.icons.bottom.left {
+  bottom: 5px;
+  left: 5px;
+}
+
+.icons.top.right {
+  top: 5px;
+  right: 5px;
+}
+
+.icons.top.left {
+  top: 5px;
+  left: 5px;
+}
+
+.icons img {
+  width: 30px;
+}
+
+.icons h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.panel {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.m-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
